@@ -76,16 +76,15 @@ private val DarkColors = darkColorScheme(
     outline = md_theme_dark_outline
 )
 
+// app theme wraps material theme
 @Composable
 fun MySootheTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable() () -> Unit
+    content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColors
-    } else {
-        LightColors
-    }
+    val colors =
+        if (darkTheme) { DarkColors }
+        else { LightColors }
 
     MaterialTheme(
         colorScheme = colors,
