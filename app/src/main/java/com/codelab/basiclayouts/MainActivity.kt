@@ -262,7 +262,7 @@ fun MySootheAppPortrait() {
 }
 
 @Composable
-private fun SootheNavigationRail(modifier: Modifier = Modifier) {
+private fun SootheNavigationRail() {
     NavigationRail(
         containerColor = MaterialTheme.colorScheme.background,
         modifier = Modifier.padding(start = 8.dp, end = 8.dp)
